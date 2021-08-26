@@ -35,15 +35,15 @@ onVideoSelect = (video) => {
 
 render(){
  return (
-  <div>
-    <div className = "ui container">
+  <div style = {{backgroundColor: 'grey'}}>
+    <div className = "ui container" style = {{backgroundColor: 'grey'}} >
     <SearchBar onFormSubmit = {this.onTermSubmit}/>
     <div className = "ui grid">
-        <div className = "ui row">
-           <div className = "eleven wide column">   
-                <VideoDetail video = {this.state.selectedVideo}/>
+        <div className = "ui column">
+           <div className = "eleven wide column" >   
+                <VideoDetail video = {this.state.selectedVideo} />
            </div>
-            <div className = 'five wide column'>
+            <div className = 'five wide column' style = {{backgroundColor: 'white', padding:'10px'}}>
             <VideoList 
                 onVideoSelect = {this.onVideoSelect} 
                 videos = {this.state.videos} />

@@ -3,13 +3,19 @@
     display: flex !important;
     align-items: center !important;
     cursor: pointer;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 .video-item.item img {
-    max-width: 180px;
     border-style: groove;
     border-color:slateblue; 
-
+    width: 150px;
 }
+@media (min-width: 568px) {
+    .row.equal {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
